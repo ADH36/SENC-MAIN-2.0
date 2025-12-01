@@ -188,7 +188,7 @@ const Contact = () => {
                       </svg>
                     ),
                     label: 'Email',
-                    value: ['contact@senc.gg', 'support@senc.gg'],
+                    value: ['contact@senc.in', 'support@senc.in'],
                     color: 'cyan'
                   },
                   {

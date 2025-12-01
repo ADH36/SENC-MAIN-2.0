@@ -132,7 +132,7 @@ const Register = () => {
                   onChange={handleChange}
                   required
                   className="w-full pl-12 pr-4 py-3 bg-[#0a0a0f] border border-white/10 rounded-xl text-white placeholder-gray-500 focus:border-cyan-500/50 transition-all duration-300"
-                  placeholder="player@senc.gg"
+                  placeholder="player@senc.in"
                 />
               </div>
             </div>
