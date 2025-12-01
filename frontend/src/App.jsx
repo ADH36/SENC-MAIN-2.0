@@ -16,8 +16,13 @@ const ProtectedRoute = ({ children }) => {
   
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+      <div className="min-h-screen flex items-center justify-center bg-[#0a0a0f]">
+        <div className="relative">
+          <div className="w-16 h-16 rounded-full loader-cyber"></div>
+          <div className="absolute inset-0 flex items-center justify-center">
+            <span className="text-cyan-400 text-xs font-gaming">LOADING</span>
+          </div>
+        </div>
       </div>
     );
   }
@@ -28,9 +33,9 @@ const ProtectedRoute = ({ children }) => {
 // App Layout
 const AppLayout = ({ children }) => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-[#0a0a0f] gradient-animate grid-pattern">
       <Navbar />
-      <main className="flex-grow">
+      <main className="flex-grow relative">
         {children}
       </main>
       <Footer />
